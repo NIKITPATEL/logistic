@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+/* Add this CSS to your stylesheet */
+/* Hover effect for the Track button */
+.btn-primary:hover {
+  background-color: #007bff; /* Change background color on hover */
+  border-color: #007bff; /* Change border color on hover */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Animation for the tracking result */
+.tracking-result {
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out; /* Add opacity transition */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Animation for the "In Progress" status */
+.in-progress {
+  display: none;
+  color: #f39c12; /* Custom color for in-progress status */
+}
+
+.in-progress.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out; /* Add a custom fade-in animation */
+}
+
+/* Animation for the "Shipped" status */
+.shipped {
+  display: none;
+  color: #27ae60; /* Custom color for shipped status */
+}
+
+.shipped.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out; /* Add a custom fade-in animation */
+}
+
+/* Animation for the "Not Found" status */
+.not-found {
+  display: none;
+  color: #e74c3c; /* Custom color for not found status */
+}
+
+.not-found.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out; /* Add a custom fade-in animation */
+}
+
+/* Custom keyframes for fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
 }
