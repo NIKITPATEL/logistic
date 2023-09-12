@@ -25,7 +25,7 @@ const Navigation = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item ml-3"> {/* Added ml-3 class for spacing */}
-              <Link to="/" className="nav-link">
+              <Link to="/logistic/" className="nav-link">
                 Home
               </Link>
             </li>
