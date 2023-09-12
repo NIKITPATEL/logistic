@@ -15,22 +15,34 @@ const HomePage = () => {
             transportation of your cargo, no matter the size or destination.
           </p>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 py-3">
           <img
             src="https://via.placeholder.com/400x300"
             alt="Logistics Services"
             className="img-fluid rounded"
           />
         </div>
+        <button className="btn btn-primary">Request a Quote</button>
+
       </div>
-      <section className="bg-light py-5">
-        <div className="container">
+      <section className="bg-light py-5 mt-3 mb-3">
+        <div className="container py-3">
           <div className="row">
             <div className="col-md-6">
               <h2>Client Testimonials</h2>
               <div className="testimonial">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod mi auctor magna efficitur, sed vestibulum lectus dictum.</p>
-                <p className="author">- John Doe, CEO, Company XYZ</p>
+              <p>"We have been using ImEx Cargo LLC's logistics services for years, and they have consistently exceeded our expectations. Their attention to detail and commitment to on-time delivery is remarkable. The team at ImEx Cargo has made our supply chain more efficient and cost-effective. We highly recommend their services."</p>
+              <p className="author">- Jane Smith, Supply Chain Manager, ABC Corporation</p>
+              <img src="client-photo.jpg" alt="Client Photo" className="client-photo" />
+              <div className="rating">
+                <span className="star">&#9733;</span>
+                <span className="star">&#9733;</span>
+                <span className="star">&#9733;</span>
+                <span className="star">&#9733;</span>
+                <span className="star">&#9734;</span>
+              </div>
+              <p className="location">New York, USA</p>
+              <p className="timestamp">Testimonial given on July 10, 20XX</p>
               </div>
             </div>
             <div className="col-md-6">
@@ -49,7 +61,11 @@ const HomePage = () => {
           &copy; 20XX Company Name. All rights reserved.
         </div>
       </footer>
+
+      
     </div>
+
+    
   );
 };
 
